@@ -36,6 +36,19 @@
 			text-decoration: none;
 		}
 
+		.credential-item {
+			display: flex;
+			align-items: center;
+			/* Center align items vertically */
+		}
+
+		.label,
+		.value {
+			margin: 0 8px;
+			/* Adds some space between label and value */
+		}
+
+
 		a:focus,
 		a:active,
 		a img:focus,
@@ -138,18 +151,20 @@
 					principles like <b>Service-Oriented Architecture (SOA) and RESTful APIs.</b>
 				</p>
 
-				<p>Feel free to explore our development environment by clicking on the logo or image below.</p>
+				<p class="fancy">Feel free to explore our development environment by clicking on the logo or image
+					below.</p>
 
 				<div class="credentials-box">
-					<b>
-						<div class="label">Username:</div>
-					</b>
-					<p class="fancy">system@admin.com</p>
-					<b>
-						<div class="label">Password:</div>
-					</b>
-					<p class="fancy">Senha123</p>
+					<div class="credential-item">
+						<div class="label"><b>Username:</b></div>
+						<div class="value fancy">system@admin.com</div>
+					</div>
+					<div class="credential-item">
+						<div class="label"><b>Password:</b></div>
+						<div class="value fancy">Senha123</div>
+					</div>
 				</div>
+
 
 				<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
 
