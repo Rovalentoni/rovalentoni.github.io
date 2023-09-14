@@ -7,12 +7,15 @@
 <html>
 
 <head>
-	<title>Massively by HTML5 UP</title>
+	<title>Rodrigo Peach's Portfolio</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
+		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
 	</noscript>
 
 	<style>
@@ -35,19 +38,6 @@
 			border: none;
 			text-decoration: none;
 		}
-
-		.credential-item {
-			display: flex;
-			align-items: center;
-			/* Center align items vertically */
-		}
-
-		.label,
-		.value {
-			margin: 0 8px;
-			/* Adds some space between label and value */
-		}
-
 
 		a:focus,
 		a:active,
@@ -92,8 +82,10 @@
 				<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
 				<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
 				<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
-				<li><a href="https://github.com/Rovalentoni" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-				<li><a href="https://linkedin.com/in/rodrigo-peach-174b7127b/" class="icon brands fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
+				<li><a href="https://github.com/Rovalentoni" target="_blank" class="icon brands fa-github"><span
+							class="label">GitHub</span></a></li>
+				<li><a href="https://linkedin.com/in/rodrigo-peach-174b7127b/" class="icon brands fa-linkedin"
+						target="_blank"><span class="label">LinkedIn</span></a></li>
 			</ul>
 		</nav>
 
@@ -103,8 +95,11 @@
 			<!-- Featured Post -->
 			<article class="post featured">
 				<header class="major">
-					<span class="date">September 6, 2023</span>
-					<h2 class="fancy"><a>About Me</a></h2>
+					<div>
+						<span class="date">September 6, 2023</span>
+						<h2 class="fancy"><a>About Me</a></h2>
+						 <img src="assets/images/profile.jpeg" alt="profile pic" class="image">
+					</div>
 					<p>
 						My name is Rodrigo, <b>I'm a U.S. Permanent Resident</b>
 						with family roots in Colorado. <br>
@@ -114,29 +109,36 @@
 						While completing my academic pursuits in Computer Engineering, I've gained over a year of
 						hands-on experience in the software industry. <br><br>
 
-						My skill set is not limited to JavaScript and PHP; it also includes server management with
-						Docker and Linux, as well as exposure to implementing RESTful APIs and SOA in ERP systems with
-						integrated BPM functionalities.
+						My skill set is not limited to <b>JavaScript and PHP;</b> it also includes server management
+						with
+						<b>Docker and Linux</b>, as well as experience in <b>implementing RESTful APIs and SOA in ERP
+							systems with
+							integrated BPM functionalities.</b>
 
 						Through my projects, I've applied rigorous testing and systematic approaches to ensure
 						robustness and scalability, particularly in the optimization of ERP systems and leveraging BPM
 						workflows. <br><br>
 
-						My career aim is to become a Full Stack Developer, with a focus on Backend and AI technologies.
+						My career aim is to become a Full Stack Developer, with a focus on <b>Backend and AI
+							technologies.</b>
 					</p>
 				</header>
-				<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
+				<img class="image main" src="/assets/images/logonew.png" alt="" /></a>
 
 				<!-- <h1 class="fancy">Technical Skillset</h1> -->
-				<h1 class="fancy">Featured Project</h1>
+				<h1 class="fancy"> <a href="#" onclick="event.preventDefault();">Featured Project</h1></a>
 
 				<h2 class=""> Agenciador System at Lambda Technology</h2>
 
 				<br>
-				<a href="https://dev.sistema-agenciador.com.br/admin/login"><img
-						src="https://lambdatt-resources.s3.amazonaws.com/logo_agenciador.png"
-						alt="Agenciador Logo" /></a>
-				<br><br>
+				<a class="image" target="_blank" href="https://dev.sistema-agenciador.com.br/admin/login">
+					<img src="/assets/images/logo_agenciador.png" alt="Agenciador Logo" />
+				</a>
+				<br>
+				<span><i class="fas fa-hand-pointer fa-lg" style="color: #1f3151;"></i></span>
+
+
+
 				<p>
 					I spearheaded the Agenciador product implementation, a specialized <b>ERP</b>
 					platform targeted at vehicle agents. With an integrated tech stack featuring <b>PHP, AngularJS,
@@ -148,26 +150,26 @@
 					methodologies and comprehensive unit tests was key in identifying and rectifying weak spots, thereby
 					solidifying the product's <b>reliability and modifiability</b>.<br><br>
 
-					This project showcases my ability to lead complex software tasks, using key technologies and design
+					This project showcases my ability to lead complex software tasks, using key technologies and
+					utilizing
 					principles like <b>Service-Oriented Architecture (SOA) and RESTful APIs.</b>
 				</p>
 
-				<p class="fancy">Feel free to explore our development environment by clicking on the logo or image
-					below.</p>
+				<p>Feel free to explore our development environment by <b>clicking on the logo or image below.</b></p>
 
 				<div class="credentials-box">
-					<div class="credential-item">
-						<div class="label"><b>Username:</b></div>
-						<div class="value fancy">system@admin.com</div>
-					</div>
-					<div class="credential-item">
-						<div class="label"><b>Password:</b></div>
-						<div class="value fancy">Senha123</div>
-					</div>
+					<b>
+						<div class="label">Username:</div>
+					</b>
+					<p class="fancy">system@admin.com</p>
+					<b>
+						<div class="label">Password:</div>
+					</b>
+					<p class="fancy">Senha123</p>
 				</div>
 
-
-				<a href="https://dev.sistema-agenciador.com.br/admin/login" class="image main"><img src="images/pic01.jpg" alt="Agenciador Reference Picture" /></a>
+				<a href="https://dev.sistema-agenciador.com.br/admin/login" target="_blank" class="image main"><img
+						src="/assets/images/dashboard4.png" alt="Agenciador Reference Picture" /></a>
 
 				<!-- <ul class="actions special">
 					<li><a href="#" class="button large">Full Story</a></li>
@@ -179,156 +181,115 @@
 				<article>
 					<header>
 						<span class="date">Showcase Project #2</span>
-						<h2 class="fancy">Lambda Technology Website</h2>
-						<span class="date">Feel free to click</span>
+						<h2 class="fancy"><a href="#" onclick="event.preventDefault();">Lambda Technology Website</h2>
+						</a>
+						<span class="date">Feel free to <b>click</b> the image below to navigate the Website. </span>
 					</header>
-					<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-					<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-						venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-					<ul class="actions special">
+					<a href="https://lambdatt.com.br/" class="image fit"><img src="/assets/images/lambda1.png"
+							alt="Website Image #1" /></a>
+					<br>
+					<p>Managed the end-to-end development of a corporate website, leveraging <b>Docker,
+							Linux,</b> and front-end technologies such as <b> HTML, CSS, and JavaScript.</b> Ensured
+						timely completion
+						and performance optimization.</p>
+					<!-- <ul class="actions special">
 						<li><a href="#" class="button">Full Story</a></li>
-					</ul>
+					</ul> -->
 				</article>
 				<article>
 					<header>
-						<span class="date">April 22, 2017</span>
-						<h2><a href="#">Primis eget<br />
-								imperdiet lorem</a></h2>
+						<span class="date">Showcase Project #3</span>
+						<h2><a onclick="event.preventDefault();" class="fancy" href="#">Automated Email Gateway<br />
+								<span style="font-size: medium;">(Microservice)</span></a></h2>
 					</header>
-					<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-					<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-						venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-					<ul class="actions special">
+					<a href="#" onclick="event.preventDefault();" class="image fit"><img
+							src="assets/images/email-logo4.png" alt="Email service logo" /></a>
+					<p> I Developed an Email Gateway utilizing <b>PHP, PHPMailer, MySQL and more</b>, to enhance system
+						communications. Integrated it seamlessly into the existing infrastructure, significantly
+						improving our communication capabilities.</p>
+					<!-- <ul class="actions special">
 						<li><a href="#" class="button">Full Story</a></li>
-					</ul>
+					</ul> -->
+				</article>
+				<!-- <h1 class="fancy text-center">Featured Project</h1>
+
+				<h2 class=""> Agenciador System at Lambda Technology</h2> -->
+				<article>
+					<header>
+						<span class="date">Featured Skill #1</span>
+						<h2 class="fancy"><a href="#" onclick="event.preventDefault();">Systematic Product Reviews <br>
+								& <br> Quality Assurance</a></h2>
+
+					</header>
+					<a href="#" onclick="event.preventDefault();" class="image fit"><img src="images/pic04.jpg"
+							alt="" /></a>
+					<p>Skilled in executing detailed product assessments and comprehensive quality checks, crucial for
+						maintaining system integrity and performance. These practices have directly led to the
+						identification of vulnerabilities and the implementation of corrective measures, enhancing
+						security and boosting system robustness.</p>
+
+					<!-- <ul class="actions special">
+						<li><a href="#" class="button">Full Story</a></li>
+					</ul> -->
 				</article>
 				<article>
 					<header>
-						<span class="date">April 18, 2017</span>
-						<h2><a href="#">Ante mattis<br />
-								interdum dolor</a></h2>
+						<span class="date">Featured Skill #2</span>
+						<h2><a href="#" onclick="event.preventDefault();" class="fancy">RESTful API <br> & <br> SOA
+								Integration</a></h2>
 					</header>
-					<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-					<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-						venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-					<ul class="actions special">
+					<a href="#" onclick="event.preventDefault();" class="image fit"><img
+							src="/assets/images/restfulapi.png" alt="" /></a>
+					<p> Skilled in implementing <b>RESTful APIs and Service-Oriented Architecture (SOA)</b>, key factors
+						in
+						building flexible and scalable systems. Experienced in API management, development, and
+						integration.
+					</p>
+					<!-- <ul class="actions special">
 						<li><a href="#" class="button">Full Story</a></li>
-					</ul>
-				</article>
-				<article>
-					<header>
-						<span class="date">April 14, 2017</span>
-						<h2><a href="#">Tempus sed<br />
-								nulla imperdiet</a></h2>
-					</header>
-					<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-					<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-						venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-					<ul class="actions special">
-						<li><a href="#" class="button">Full Story</a></li>
-					</ul>
-				</article>
-				<article>
-					<header>
-						<span class="date">April 11, 2017</span>
-						<h2><a href="#">Odio magna<br />
-								sed consectetur</a></h2>
-					</header>
-					<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-					<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-						venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-					<ul class="actions special">
-						<li><a href="#" class="button">Full Story</a></li>
-					</ul>
-				</article>
-				<article>
-					<header>
-						<span class="date">April 7, 2017</span>
-						<h2><a href="#">Augue lorem<br />
-								primis vestibulum</a></h2>
-					</header>
-					<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-					<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
-						venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-					<ul class="actions special">
-						<li><a href="#" class="button">Full Story</a></li>
-					</ul>
+					</ul> -->
 				</article>
 			</section>
-
-			<!-- Footer -->
-			<footer>
-				<div class="pagination">
-					<!--<a href="#" class="previous">Prev</a>-->
-					<a href="#" class="page active">1</a>
-					<a href="#" class="page">2</a>
-					<a href="#" class="page">3</a>
-					<span class="extra">&hellip;</span>
-					<a href="#" class="page">8</a>
-					<a href="#" class="page">9</a>
-					<a href="#" class="page">10</a>
-					<a href="#" class="next">Next</a>
-				</div>
-			</footer>
 
 		</div>
 
 		<!-- Footer -->
 		<footer id="footer">
-			<section>
-				<form method="post" action="#">
-					<div class="fields">
-						<div class="field">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
-						</div>
-						<div class="field">
-							<label for="email">Email</label>
-							<input type="text" name="email" id="email" />
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="3"></textarea>
-						</div>
-					</div>
-					<ul class="actions">
-						<li><input type="submit" value="Send Message" /></li>
-					</ul>
-				</form>
-			</section>
 			<section class="split contact">
-				<section class="alt">
-					<h3>Address</h3>
-					<p>1234 Somewhere Road #87257<br />
-						Nashville, TN 00000-0000</p>
-				</section>
 				<section>
 					<h3>Phone</h3>
-					<p><a href="#">(000) 000-0000</a></p>
+					<p>(928) 251-4365</p>
 				</section>
 				<section>
 					<h3>Email</h3>
-					<p><a href="#">info@untitled.tld</a></p>
+					<p>RodrigoValentoni@gmail.com
+					</p>
+				</section>
+				<section class="alt">
+					<h3>Address</h3>
+					<p>4061 Serenade Road<br />
+						Castle Rock, CO 80104</p>
 				</section>
 				<section>
 					<h3>Social</h3>
 					<ul class="icons alt">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a>
+						</li> -->
+						<li><a href="https://linkedin.com/in/rodrigo-peach-174b7127b/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a>
 						</li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a>
-						</li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://github.com/Rovalentoni" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 					</ul>
 				</section>
+
 			</section>
 		</footer>
 
 		<!-- Copyright -->
 		<div id="copyright">
 			<ul>
-				<li>&copy; Untitled</li>
-				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+				<li>&copy; Rodrigo V. Peach</li>
+				<li>Software Developer</li>
 			</ul>
 		</div>
 
